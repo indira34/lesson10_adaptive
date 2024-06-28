@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ button {
+    cursor: pointer;
+}
+
+.row {
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-3 {
+    width: 33.33%;
+    padding: 15px;
+}
+
+.col-12 {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+}
+.layout{
+   display: flex; 
+   justify-content: space-between;
+   gap: 20px;
+}
+ .aside{
+max-width: 270px;
+width: 100%;
+ }
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 34px 0;
+   
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-link {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-btn {
+    background-color: unset;
+    border: unset;
+}
+.burger{
+    display: none;
+    
+}
+.burger-menu{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    align-items: flex-start;
+    gap: 45px;
+    right:-160px;
+    bottom: 0;
+  transition:  0.6s;
+  display: none;
+}
+.show{
+    left: 50%;
+    right: 0;
+    display: flex;
+}
+.burger-menu button{
+   position: absolute;
+   right: 20px;
+}
+.burger-menu a{
+    font-size: 18px;
+}
+.box,
+.main-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.box span,
+.main-box span {
+    background-color: rgba(74, 144, 226, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 3px 12px;
+    color: #fff;
+    position: absolute;
+    top: 130px;
+    left: -80px;
+    transition: 0.6s;
+}
+
+.box:hover span,
+.main-box:hover span {
+    top: 8px;
+    left: 8px;
+}
+
+.main-box h3 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 26px;
+}
+
+.main-box p,
+.box p {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.box h3 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+}
+
+.inner-main-box,
+.inner-box {
+    position: absolute;
+    bottom: -80px;
+    left: -40px;
+    transition: 0.6s;
+    right: 30px;
+}
+
+.box:hover .inner-box,
+.main-box:hover .inner-main-box {
+    bottom: 1px;
+    left: 10px;
+    right: 30px;
+}
+.hero{
+    padding: 40px 0;
+}
+.hero .col-3:(:first-child){
+   padding-top: unset;
+}
+
+
+
+
+
+
+
+
+
+.main {
+    max-width: 770px;
+    width: 100%;
+}
+
+.desc-wrapper {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    margin-top: -150px;
+    position: relative;
+    z-index: 1;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 60px;
+    box-shadow: rgba(102, 102, 102, 1);
+}
+
+.title {
+    color: black;
+    font-size: 25px;
+}
+
+.category {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(74, 144, 222, 1);
+    padding: 4px 12px;
+}
+
+.date {
+    color: rgba(102, 102, 102, 1);
+    font-size: 14px;
+    font-style: italic;
+}
+
+.desc {
+    color: rgba(102, 102, 102, 1);
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.annotation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.annotation h4 {
+    color: black;
+    font-size: 18px;
+}
+
+.annotation span {
+    color: rgba(153, 153, 153, 1);
+    font-size: 14px;
+   font-style: italic;
+}
+.annotation p{
+    color: rgba(102, 102, 102, 1);
+    font-size: 15px;
+}
+.annotation button{
+   background-color: black;
+   color: #fff;
+   width: 100%;
+   padding: 16px ;
+   border-radius: 8px;
+}
+
+
